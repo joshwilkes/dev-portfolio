@@ -10,7 +10,35 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<div id="main">
+  <h2>Sidenav Push Example</h2>
+  <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
+  <div class="logo" onclick="openNav()"></div>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<!-- <div class="container">
 	<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
 	  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
@@ -33,7 +61,7 @@
 	    </ul>
 	  </div>
 	</nav>
-</div>
+</div> -->
 
 <!-- Add the below just before the closing </body> -->
 <!-- jQuery (necessary for JavaScript plugins) -->
