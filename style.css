@@ -1,5 +1,5 @@
 body {
-    font-family: "Lato", sans-serif;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .sidenav {
@@ -19,7 +19,7 @@ body {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #f1f1f1;
     display: block;
     transition: 0.3s;
     text-decoration: none;
@@ -27,7 +27,7 @@ body {
 
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: #FED766;
     text-decoration: underline;
 }
 
@@ -39,6 +39,20 @@ body {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+
+.sidenav .closebtn:hover {
+    text-decoration: none;
+}
+
+.side-media {
+    position: absolute;
+    list-style: none;
+    text-align: center;
+}
+
+.side-media a i:hover {
+    color: #f1f1f1;
 }
 
 #main {
@@ -88,9 +102,47 @@ body {
     margin-bottom: 3em;
 }
 
+h4 a {
+    color: #FED766;
+    font-weight: bold;
+}
+
+h4 a:hover {
+    color: #FED766;
+    text-decoration: underline;
+}
+
+h4 a:focus, h4 a:active {
+    color: #FED766;
+}
+
+hr {
+    border-top-color: #cecece;
+}
+
+#project-img {
+    max-width: 100%;
+    max-height: 100%;
+    /*width: 450px;
+    height: 350px;*/
+}
+
+#resume {
+    background-color: #cecece;
+}
+
+.pdf {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#contact {
+    padding-top: 3em;
+    background-color: #FED766;
+}
+
 footer {
     position: absolute;
-    bottom: 0;
     padding: 1em 0 1em 0;
     width: 100%;
     text-align: center;
