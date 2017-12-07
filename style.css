@@ -31,8 +31,6 @@ body {
     text-decoration: underline;
 }
 
-
-
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -46,6 +44,7 @@ body {
 }
 
 .side-media {
+    margin-top: 4em;
     position: absolute;
     list-style: none;
     text-align: center;
@@ -59,6 +58,9 @@ body {
     margin-bottom: 5em;
     transition: margin-left .5s;
     padding: 16px;
+    text-align: center;
+    color: white;
+    padding-bottom: 25em;
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("pics/laptop-on-work-desk.jpg");
     -webkit-background-size: cover;
     -moz-background-size:  cover;
@@ -71,12 +73,32 @@ body {
   .sidenav a {font-size: 18px;}
 }
 
+@-webkit-keyframes pulse {
+    0% { -webkit-transform: scale(0.9); opacity: 0.7; }
+    50% { -webkit-transform: scale(1); opacity: 1; }
+    100% { -webkit-transform: scale(0.9); opacity: 0.7; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.9); opacity: 0.7; }
+    50% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(0.9); opacity: 0.7; }
+}
+
+
 .logo {
     width: 155px;
     height: 155px;
     display: block;
     margin: 0 auto;
+    margin-bottom: 5em;
     background: url("pics/jw-logo.png") no-repeat;
+
+    -webkit-animation: pulse 3s 2 ease-in-out;
+    -o-animation: pulse 3s 2 ease-in-out;
+    -ms-animation: pulse 3s 2 ease-in-out; 
+    -moz-animation: pulse 3s 2 ease-in-out; 
+    animation: pulse 3s 2 ease-in-out;
 
 }
 
@@ -139,6 +161,10 @@ hr {
 
 .project-row:hover h3 u {
     border-bottom: 2px solid #FED766;
+}
+
+p {
+    font-size: 16px;
 }
 
 #resume {
