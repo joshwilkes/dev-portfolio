@@ -63,35 +63,35 @@
 
 <div id="projects" class="container-fluid">
 	<div class="container">
-		<div class="row">
 			<h1 class="col-center">My Projects</h1>
             <h4 class="col-center">For more examples checkout my <a href="#resume">resume</a></h4>
             <hr>
+		<div id="remote-service" class="row project-row">
             <div class="col-md-6">
                 <img id="project-img" src="pics/remote-service.png">
 			</div>
 			<div class="col-md-6">
-                <h3>Remote-Service ThingWorx</h3>
+                <h3><u>Remote-Service ThingWorx</u></h3>
                 <p>Developed a java based ThingWorx extension to provide an interchangeable underlying data storage model for the PTC Remote Service Product. These new extensions enabled the product to use PostgreSQL to persist data, which resulted in improved performance and scalability.</p>
 			</div>
 		</div>
-        <div class="row">
             <hr>
+        <div class="row project-row">
             <div class="col-md-6">
-                <h3>Ecommerce Site</h3>
+                <h3><u>Ecommerce Site</u></h3>
                 <p>Designed an ecommerce website powered by bootstrap. The site allows users to simulate purchasing snowboarding gear.</p>
             </div>
             <div class="col-md-6">
                 <img id="project-img" src="pics/ecommerce.png">
             </div>
         </div>
-        <div class="row">
             <hr>
+        <div class="row project-row">
             <div class="col-md-6">
                 <img id="project-img" src="pics/workflow.png">
             </div>
             <div class="col-md-6">
-                <h3>Workflow Management</h3>
+                <h3><u>Workflow Management</u></h3>
                 <p>Served as the scrum master for a semester long group project developing a java based web application for a customer at Dresser-Rand. The web application was designed to track and manage employee tasks and provide statistics based on usage.</p>
             </div>
         </div>
@@ -109,6 +109,7 @@
 <div id="contact" class="container-fluid">
     <div class="container col-center">
         <h1>Want to get in touch?</h1>
+        <h3>Drop me an <a href="mailto:josdhwilkes@gmail.com">email</a></h3>
     </div>
 </div>
 
@@ -118,12 +119,16 @@
 	<a href=""><i class="fa fa-3x fa-google-plus"></i></a>
 </footer>
 
+<a class="sticky-btn fa fa-3x fa-bars" href="javascript:void(0)" onclick="openNav();"></a>
+
 <script>
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
     document.getElementById("skills").style.marginLeft = "250px";
     document.getElementById("projects").style.marginLeft = "250px";
+    document.getElementById("resume").style.marginLeft = "250px";
+    document.getElementById("contact").style.marginLeft = "250px";
 }
 
 function closeNav() {
@@ -131,6 +136,8 @@ function closeNav() {
     document.getElementById("main").style.marginLeft= "0";
     document.getElementById("skills").style.marginLeft = "auto";
     document.getElementById("projects").style.marginLeft = "auto";
+    document.getElementById("resume").style.marginLeft = "auto";
+    document.getElementById("contact").style.marginLeft = "auto";
 }
 </script>
 
