@@ -20,31 +20,66 @@
 </div>
 
 <div id="main">
-  <h2>Sidenav Push Example</h2>
-  <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
   <div class="logo" onclick="openNav()"></div>
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+  <h1 style="text-align: center; color: white;">Josh Wilkes</h1>
+  <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span> -->
 </div>
 
-<div class="container">
+<div id="skills" class="container">
     <div class="row">
-        <div class="col-md-4">
+    	<h1 class="col-center">Skills</h1>
+        <div class="col-md-4 col-center">
+            <i class="fa fa-5x fa-coffee"></i>
+            <h1>Code</h1>
+            <p>I have developed applications in Java, Javascript, C++ and Python. I have experience debugging code, as well as writing integration and unit tests.</p>
+        </div>
+        <div class="col-md-4 col-center">
             <i class="fa fa-5x fa-code"></i>
-            <h1>Web Development</h1>
-            <p>I design webpages with HTML(5), CSS(3) and JavaScript.</p>
+            <h1>Web</h1>
+            <p>I have designed webpages with HTML(5), CSS(3) and JavaScript. I have designed and implemented UI for the ThingWorx IOT platform.</p>
+        </div>
+        <div class="col-md-4 col-center">
+            <i class="fa fa-5x fa-code-fork"></i>
+            <h1>Collaboration</h1>
+            <p>I have worked on multiple SCRUM teams, both on academic and professional projects. I regularly work with version control software such as Git and Subversion.</p>
         </div>
     </div>
 </div>
+
+<div id="projects" class="container-fluid">
+	<div class="container">
+		<div class="row">
+			<h1 class="col-center">My Projects</h1>
+			<div class="col-md-4">
+				
+			</div>
+			<div class="col-md-4">
+				
+			</div>
+			<div class="col-md-4">
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<a href=""><i class="fa fa-3x fa-linkedin-square"></i></a>
+	<a href="https://github.com/wilkesjd"><i class="fa fa-3x fa-github"></i></a>
+	<a href=""><i class="fa fa-3x fa-google-plus"></i></a>
+</footer>
 
 <script>
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("skills").style.marginLeft = "250px";
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
+    document.getElementById("skills").style.marginLeft = "auto";
 }
 </script>
 

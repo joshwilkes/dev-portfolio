@@ -42,6 +42,7 @@ body {
 }
 
 #main {
+    margin-bottom: 3em;
     transition: margin-left .5s;
     padding: 16px;
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("pics/laptop-on-work-desk.jpg");
@@ -69,12 +70,33 @@ body {
     background: url("pics/jw-logo-reverse.png") no-repeat;
 }
 
-
-.i .fa {
-    font-size: 5.0rem;
-    color: yellow;
+.col-center {
+    text-align: center;
 }
 
 .fa {
     color: #FED766;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+#skills {
+    margin-bottom: 3em;
+}
+
+#projects {
+    margin-bottom: 3em;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    padding: 1em 0 1em 0;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, .5);
+}
+
+footer a i:hover {
+    color: white;
 }
